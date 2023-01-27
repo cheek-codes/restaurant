@@ -33,9 +33,7 @@ nav{
 }
 
 .centre{
-    border-width: 5px;
-    border-style: solid;
-    border-color: red;
+    border: 5px solid red;
     width: 50%;
     padding: 0;
     display: flex;
@@ -44,9 +42,7 @@ nav{
 }
 
 .right{
-    border-width: 5px;
-    border-style: solid;
-    border-color: red;
+    border: 5px solid red;
     width: 20%;
     padding: 0;
     display: flex;
@@ -107,9 +103,7 @@ h2, h4{
 *******************************************/
 
 section{
-    border-width: 2px;
-    border-style: solid;
-    border-color: green;
+    border: 1px solid green;
 }
 
 button{
@@ -133,9 +127,8 @@ h1{
 }
 
 .homedish{
-    border-width: 2px;
-    border-style: solid;
-    border-color: red;
+    border: 2px solid red;
+
     float: right;
     width: 50%;
 }
@@ -153,9 +146,8 @@ h1{
 }
 
 .pagetitle{
-    border-width: 2px;
-    border-style: solid;
-    border-color: green;
+    border: 2px solid green;
+
     text-align: center;
 }
 
@@ -164,10 +156,9 @@ h1{
 }
 
 .food{
+    border: 5px solid red;
     width: 30%;
-    border-width: 2px;
-    border-style: solid;
-    border-color: red;
+
 }
 .topdish, .bottomdish{
     display: flex;
