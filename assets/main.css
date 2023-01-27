@@ -1,0 +1,181 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+
+html{
+    background-color: rgb(236, 236, 236);
+}
+
+  
+/******************************************
+ navigation bar
+*******************************************/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.centre{
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    width: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.right{
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    width: 20%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+#navihome:hover{
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+#navidishes:hover{
+    background-color: green;
+    color: white;
+    padding: 5px;
+
+}
+
+#naviabout:hover{
+    background-color: green;
+    color: white;
+    padding: 5px;
+
+}
+
+#navimenu:hover{
+    background-color: green;
+    color: white;
+    padding: 5px;
+
+}
+
+#navireview:hover{
+    background-color: green;
+    color: white;
+    padding: 5px;
+
+}
+
+#naviorder:hover{
+    background-color: green;
+    color: white;
+    padding: 5px;
+
+}
+
+h2, h4{
+    color: green;
+}
+
+
+
+/******************************************
+ home page
+*******************************************/
+
+section{
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+}
+
+button{
+    background-color: darkblue;
+    color: white;
+    padding: 8px;
+}
+
+button:hover{
+    background-color: green;
+}
+
+.orderbutt{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2rem;
+    color: darkblue;
+}
+
+.homedish{
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    float: right;
+    width: 50%;
+}
+
+
+/******************************************
+ popular dishes page
+*******************************************/
+
+
+.pagetitlesubname{
+    color: darkblue;
+    font-size: 25px;
+    margin-top: 7px;
+}
+
+.pagetitle{
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+    text-align: center;
+}
+
+.pagetitlename{
+    margin:0;
+}
+
+.food{
+    width: 30%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+}
+.topdish, .bottomdish{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart{
+    color: white;
+    float: right;
+    display: flex;
+}
