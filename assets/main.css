@@ -65,8 +65,10 @@ header{
 *******************************************/
 
 nav{
-    display: flex;
-    justify-content: space-around;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color:var(--light-color);
+    padding: .5rem 1.5rem;
 }
 
 .right{
@@ -78,43 +80,7 @@ nav{
     list-style: none;
 }
 
-#navihome:hover{
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    background-color: green;
-    color:var(--light-color);
-    padding: .5rem 1.5rem;
-}
-
-#navidishes:hover{
-    background-color: green;
-    color: white;
-    padding: 5px;
-
-}
-
-#naviabout:hover{
-    background-color: green;
-    color: white;
-    padding: 5px;
-
-}
-
-#navimenu:hover{
-    background-color: green;
-    color: white;
-    padding: 5px;
-
-}
-
-#navireview:hover{
-    background-color: green;
-    color: white;
-    padding: 5px;
-
-}
-
-#naviorder:hover{
+nav a:hover{
     background-color: green;
     color: white;
     padding: 5px;
