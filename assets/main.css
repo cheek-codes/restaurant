@@ -109,6 +109,10 @@ header .icons a:hover{
     transform: rotate(360deg);
 }
 
+header .icons .fa-bars{
+    display: none;
+}
+
 
 /******************************************
  home page
