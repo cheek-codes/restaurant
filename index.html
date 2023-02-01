@@ -7,32 +7,40 @@
     <title>Restaurant</title>
 <!-- style -->
     <link rel="stylesheet" href="assets/main.css">
+
+<!-- icons -->
+    <script src="https://kit.fontawesome.com/bf87eee58f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
 <!-- Header -->
 
-    <a href="#">Resto</a>
+    <header>
+        <a class="logo" href="#"><i class="fa-solid fa-utensils"></i>Resto</a>
 
-    <nav class="navi">
-        <a href="#home" id="navihome">Home</a>
-        <a href="#dishes" id="navidishes">Dishes</a>
-        <a href="#about" id="naviabout">About</a>
-        <a href="#menu" id="navimenu">Menu</a>
-        <a href="#review" id="navireview">Review</a>
-        <a href="#order" id="naviorder">Order</a>
-    </nav>
+        
 
-    <div class="right">
-        <!-- menu bar -->
-        <a href="#">menu bar</a>
-        <!-- search -->
-        <a href="#">search</a>
-        <!-- likes -->
-        <a href="#">likes</a>
-        <!-- cart -->
-        <a href="#">cart</a>
-    </div>
+        <nav class="navi">
+            <a class="active" href="#home" id="navihome">Home</a>
+            <a href="#dishes" id="navidishes">Dishes</a>
+            <a href="#about" id="naviabout">About</a>
+            <a href="#menu" id="navimenu">Menu</a>
+            <a href="#review" id="navireview">Review</a>
+            <a href="#order" id="naviorder">Order</a>
+        </nav>
+
+        <div class="icons">
+            <!-- menu bar -->
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <!-- search -->
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <!-- likes -->
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <!-- cart -->
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
 
 
 <!-- home -->
@@ -358,5 +366,6 @@
 
 
 <script src="assets\main.js"></script>
+
 </body>
 </html>
