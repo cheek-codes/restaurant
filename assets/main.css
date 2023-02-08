@@ -109,7 +109,7 @@ header .icons a:hover{
     transform: rotate(360deg);
 }
 
-header .icons .fa-bars{
+header .icons #menu-bars{
     display: none;
 }
 
@@ -185,4 +185,68 @@ s
     color: white;
     float: right;
     display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/******************************************
+media queries
+*******************************************/
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media(max-width: 768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navi{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background:  #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navi .active{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navi a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+}
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 50%;
+    }
 }
