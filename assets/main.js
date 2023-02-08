@@ -1,7 +1,6 @@
 let menu = document.querySelector("#menu-bars")
-let navi = document.querySelector(".navi")
+let navibar = document.querySelector(".navibar")
 
 menu.onlcick = () => {
-    menu.classList.toggle("fa-times")
-    navi.classList.toggle("active")
+    navibar.classList.toggle(".active")
 }

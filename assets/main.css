@@ -5,33 +5,6 @@
     --box-shadow:0 .5 rem 1.5rem rgba(0,0,0,.1);
 }
 
-/* Box Model Hack */
-* {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
-  }
-  
-/* Clear fix hack */
-  .clearfix:after {
-       content: ".";
-       display: block;
-       clear: both;
-       visibility: hidden;
-       line-height: 0;
-       height: 0;
-  }
-  
-  .clear {
-      clear: both;
-  }
-
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -75,15 +48,15 @@ header{
 navigation bar
 *******************************************/
 
-header .navi a{
+header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     color:var(--light-color);
 }
 
-header .navi a.active,
-header .navi a:hover{
+header .navbar a.active,
+header .navbar a:hover{
     color: #fff;
     background: var(--green);
 }
@@ -218,7 +191,7 @@ media queries
         display: inline-block;
     }
 
-    header .navi{
+    header .navbar{
         position: absolute;
         top: 100%;
         left: 0;
@@ -230,11 +203,11 @@ media queries
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    header .navi .active{
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    header .navbar .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    header .navi a{
+    header .navbar a{
         display: block;
         padding: 1.5rem;
         margin: 1rem;
