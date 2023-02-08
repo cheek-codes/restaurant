@@ -1,6 +1,6 @@
 let menu = document.querySelector("#menu-bars")
-let navibar = document.querySelector(".navibar")
+let navbar = document.querySelector(".navbar")
 
-menu.onlcick = () => {
-    navibar.classList.toggle(".active")
+menu.onclick = () => {
+    navbar.classList.toggle("active")
 }

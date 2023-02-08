@@ -5,14 +5,24 @@
     --box-shadow:0 .5 rem 1.5rem rgba(0,0,0,.1);
 }
 
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
-
-
 
 
 /******************************************
@@ -33,13 +43,13 @@ header{
     box-shadow: var(--box-shadow);
 }
 
-.logo{
+header .logo{
     color: var(--black);
     font-size: 2.5rem;
     font-weight: bolder;
 }
 
-.logo i{
+header .logo i{
     color: var(--green);
 }
 
@@ -185,6 +195,7 @@ media queries
     }
 }
 
+
 @media(max-width: 768px){
 
     header .icons #menu-bars{
@@ -198,12 +209,12 @@ media queries
         right: 0;
         background:  #fff;
         border-top: .1rem solid rgba(0,0,0,.2);
-        border-bottom: .1rem solid rgba(0,0,0,.2);
+        /* border-bottom: .1rem solid rgba(0,0,0,.2); */
         padding: 1rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    header .navbar .active{
+    header .navbar.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
@@ -215,7 +226,6 @@ media queries
         background: #eee;
     }
 }
-
 
 
 @media (max-width:991px) {
