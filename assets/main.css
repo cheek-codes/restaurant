@@ -151,6 +151,14 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
 
 
 
@@ -160,73 +168,19 @@ header .icons #menu-bars{
 *******************************************/
 
 section{
-    border: 1px solid green;
+    padding: 2rem 9%;
 }
 
-button{
-    background-color: darkblue;
-    color: white;
-    padding: 8px;
+img .image{
+    height: 10%;
+    width: 10%;
 }
-
-button:hover{
-    background-color: green;
-}
-
-.orderbutt{
-    color: white;
-    text-decoration: none;
-}
-
-h1{
-    font-size: 2rem;
-    color: darkblue;
-}
-
-/* .homedish{
-    border: 2px solid red;
-s
-    float: right;
-    width: 50%;
-} */
 
 
 /******************************************
  popular dishes page
 *******************************************/
 
-
-.pagetitlesubname{
-    color: darkblue;
-    font-size: 25px;
-    margin-top: 7px;
-}
-
-.pagetitle{
-    border: 2px solid green;
-
-    text-align: center;
-}
-
-.pagetitlename{
-    margin:0;
-}
-
-.food{
-    border: 5px solid red;
-    width: 30%;
-
-}
-.topdish, .bottomdish{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cart{
-    color: white;
-    float: right;
-    display: flex;
-}
 
 
 
