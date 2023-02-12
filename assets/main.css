@@ -26,7 +26,6 @@ html{
 
 section{
     padding: 2rem 9%;
-    border: 1rem solid red;
 }
 
 /* section:nth-child(even){
@@ -60,6 +59,23 @@ header .logo{
 
 header .logo i{
     color: var(--green);
+}
+
+
+
+/******************************************
+night mode
+*******************************************/
+
+
+body{
+    background-color: white;
+    color: black;
+}
+
+.dark-mode{
+background-color: rgb(37, 37, 37);
+color: white;
 }
 
 
@@ -99,6 +115,12 @@ header .icons a:hover{
     color: #fff ;
     background: var(--green);
     transform: rotate(360deg);
+}
+
+header .icons i .dark-mode,
+header .icons a .dark-mode{
+    background-color: rgb(37, 37, 37);
+    color: white;
 }
 
 header .icons #menu-bars{
@@ -165,23 +187,22 @@ header .icons #menu-bars{
  home page
 *******************************************/
 
-.home .home-slider .slide{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding-top: 9rem;
-    border: 1rem solid red;
-}
 
 .home .home-slider .slide .content{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex: 1 1 45rem;
+    gap: 2rem;
+    padding-top: 9rem;
     border: 1rem dotted blue;
 }
 
+.home .home-slider .slide .content span,h3,p, .btn{
+    border: 1rem solid red;
+    display: flex;
+    align-items: end;
+}
 
 
 
