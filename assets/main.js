@@ -1,13 +1,14 @@
 let menu = document.querySelector("#menu-bars")
 let navbar = document.querySelector(".navbar")
 
-let toggleDarkMode = document.querySelector("#toggle-dark-mode")
-let body = document.querySelector("body")
-let header = document.querySelector("header")
+let darkMode = document.querySelector("#night-mode")
+let html = document.querySelector("html")
 
-toggleDarkMode.onclick = () => {
-    body.classList.toggle("dark-mode")
-    header.classList.toggle("dark-mode")
+
+
+darkMode.onclick = () => {
+    darkMode.classList.toggle("fa-sun")
+    html.classList.toggle("night-mode")
 }
 
 menu.onclick = () => {

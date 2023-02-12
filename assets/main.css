@@ -63,21 +63,6 @@ header .logo i{
 
 
 
-/******************************************
-night mode
-*******************************************/
-
-
-body{
-    background-color: white;
-    color: black;
-}
-
-.dark-mode{
-background-color: rgb(37, 37, 37);
-color: white;
-}
-
 
 /******************************************
 navigation bar
@@ -98,7 +83,6 @@ header .navbar a:hover{
 
 header .icons i,
 header .icons a{
-    cursor: pointer;
     margin-left: .5rem;
     height: 4.5rem;
     line-height: 4.5rem;
@@ -115,12 +99,6 @@ header .icons a:hover{
     color: #fff ;
     background: var(--green);
     transform: rotate(360deg);
-}
-
-header .icons i .dark-mode,
-header .icons a .dark-mode{
-    background-color: rgb(37, 37, 37);
-    color: white;
 }
 
 header .icons #menu-bars{
@@ -206,20 +184,26 @@ header .icons #menu-bars{
 
 
 
-
-
 /******************************************
  popular dishes page
 *******************************************/
 
 
 
+/******************************************
+night mode
+*******************************************/
 
+.night-mode *{
+    background: rgb(37, 37, 37);
+    color: white;
+}
 
-
-
-
-
+header .icons .night-mode i,
+header .icons .night-mode a{
+    background: rgb(37, 37, 37);
+    color: white;
+}
 
 
 
