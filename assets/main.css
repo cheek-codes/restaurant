@@ -26,8 +26,12 @@ html{
 
 section{
     padding: 2rem 9%;
+    border: 1rem solid red;
 }
 
+/* section:nth-child(even){
+    background: #eee;
+} */
 
 
 /******************************************
@@ -167,14 +171,15 @@ header .icons #menu-bars{
     flex-wrap: wrap;
     gap: 2rem;
     padding-top: 9rem;
+    border: 1rem solid red;
 }
 
 .home .home-slider .slide .content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     flex: 1 1 45rem;
-}
-
-img{
-    width: 40%;
+    border: 1rem dotted blue;
 }
 
 
