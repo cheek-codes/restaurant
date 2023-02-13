@@ -28,9 +28,9 @@ section{
     padding: 2rem 9%;
 }
 
-/* section:nth-child(even){
+section:nth-child(even){
     background: #eee;
-} */
+}
 
 
 /******************************************
@@ -166,21 +166,43 @@ header .icons #menu-bars{
 *******************************************/
 
 
-.home .home-slider .slide .content{
+.home .home-slider .slide{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    flex: 1 1 45rem;
     gap: 2rem;
     padding-top: 9rem;
-    border: 1rem dotted blue;
 }
 
-.home .home-slider .slide .content span,h3,p, .btn{
-    border: 1rem solid red;
-    display: flex;
-    align-items: end;
+.home .home-slider .slide .content{
+    flex: 1 1 45rem;
 }
+
+.home .home-slider .slide .image{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+    width: 90rem;
+}
+
+.home .home-slider .slide .content span{
+    color: var(--green);
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3{
+    color: var(--black);
+    font-size: 7rem;
+
+}
+
+.home .home-slider .slide .content p{
+    color: var(--light-color);
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
 
 
 
