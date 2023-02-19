@@ -199,8 +199,9 @@ header .icons #menu-bars{
 
 .home .home-slider .slide .content p{
     color: var(--light-color);
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: .5rem 0;
+    line-height: 1.5;
 }
 
 
@@ -212,20 +213,7 @@ header .icons #menu-bars{
 
 
 
-/******************************************
-night mode
-*******************************************/
 
-.night-mode *{
-    background: rgb(37, 37, 37);
-    color: white;
-}
-
-header .icons .night-mode i,
-header .icons .night-mode a{
-    background: rgb(37, 37, 37);
-    color: white;
-}
 
 
 
@@ -286,4 +274,24 @@ media queries
     html{
         font-size: 50%;
     }
+}
+
+
+
+
+
+
+/******************************************
+dark mode
+*******************************************/
+
+.dark-mode *{
+    background: rgb(37, 37, 37);
+    color: white;
+}
+
+.dark-mode header .icons i,
+.dark-mode header .icons a{
+    background: rgb(37, 37, 37);
+    color: white;
 }
