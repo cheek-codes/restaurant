@@ -43,6 +43,11 @@ section:nth-child(even){
     padding: .8rem 3rem;
 }
 
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
 
 /******************************************
  header
@@ -214,6 +219,10 @@ header .icons #menu-bars{
     line-height: 1.5;
 }
 
+.swiper-pagination-bullet-active{
+    background: var(--green);
+}
+
 
 
 
@@ -239,6 +248,10 @@ media queries
 
     header{
         padding: 1rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
     }
 }
 
@@ -276,6 +289,10 @@ media queries
     #search-form #search-box{
         width: 90%;
         margin: 0 1rem;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
     }
 }
 

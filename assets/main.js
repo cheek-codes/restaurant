@@ -1,3 +1,5 @@
+// nav bar
+
 let menu = document.querySelector("#menu-bars")
 let navbar = document.querySelector(".navbar")
 
@@ -12,6 +14,10 @@ window.onscroll = () => {
     navbar.classList.remove("active")
 }
 
+
+
+// search
+
 document.querySelector("#search-icon").onclick = () => {
     document.querySelector("#search-form").classList.toggle("active")
 }
@@ -22,12 +28,28 @@ document.querySelector("#close").onclick = () => {
 
 
 
+// swiper
 
+var swiper = new Swiper(".home-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 7500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    loop: true,
+})
+
+
+
+// dark mode
 
 let darkMode = document.querySelector("#dark-mode")
 let html = document.querySelector("html")
-
-
 
 darkMode.onclick = () => {
     html.classList.toggle("dark-mode")
