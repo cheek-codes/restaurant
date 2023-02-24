@@ -32,6 +32,17 @@ section:nth-child(even){
     background: #eee;
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
 
 /******************************************
  header
@@ -183,7 +194,7 @@ header .icons #menu-bars{
 }
 
 .home .home-slider .slide .image img{
-    width: 90rem;
+    width: 100%;
 }
 
 .home .home-slider .slide .content span{
@@ -194,7 +205,6 @@ header .icons #menu-bars{
 .home .home-slider .slide .content h3{
     color: var(--black);
     font-size: 7rem;
-
 }
 
 .home .home-slider .slide .content p{
