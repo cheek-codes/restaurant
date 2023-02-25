@@ -312,7 +312,8 @@ media queries
 dark mode
 *******************************************/
 
-.dark-mode *{
+.dark-mode *,
+.dark-mode section:nth-child(even){
     background: rgb(37, 37, 37);
     color: white;
 }
