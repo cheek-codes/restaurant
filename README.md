@@ -1,4 +1,4 @@
-# No Moo For You : [check it out](https://resto-diner.netlify.app/)
+# Resto diner : [check it out](https://resto-diner.netlify.app/)
 
 
 ### Resto Diner is a sample restaurant site that I created. It includes SwiperJS package
@@ -8,7 +8,7 @@ HTML, CSS, JAVASCRIPT
 
 
 ## Optimizations
-I plan on fixing the dark mode, and others. This is not complete yet. 
+I plan on fixing the dark mode, and others. This project is not complete yet. 
 
 
 ## Lesson Learned:
