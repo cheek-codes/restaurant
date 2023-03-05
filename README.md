@@ -1,15 +1,15 @@
 # Resto diner : [check it out](https://resto-diner.netlify.app/)
 
 
-### Resto Diner is a sample restaurant site that I created. It includes SwiperJS package
+### Resto Diner is a sample restaurant site that I created. It is responsive with dark mode
 
 ## What I used
 HTML, CSS, JAVASCRIPT
 
 
 ## Optimizations
-I plan on fixing the dark mode, and others. This project is not complete yet. 
+I plan on resizing images to fit the web page better.
 
 
 ## Lesson Learned:
-Use of different packages
+Dark mode!
