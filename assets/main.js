@@ -108,15 +108,51 @@ window.onload = fadeOut
 
 // dark mode
 
-let darkMode = document.querySelector("#dark-mode")
-let html = document.querySelector("html")
+// let darkMode = document.querySelector("#dark-mode")
+// let html = document.querySelector("html")
 
-darkMode.onclick = () => {
-    html.classList.toggle("dark-mode")
-    if (icon.classList.contains('fa-moon')) {
-        icon.classList.replace('fa-moon', 'fa-sun')
+// darkMode.onclick = () => {
+//     html.classList.toggle("dark-mode")
+//     if (icon.classList.contains('fa-moon')) {
+//         icon.classList.replace('fa-moon', 'fa-sun')
     
-      } else {
-        icon.classList.replace('fa-sun', 'fa-moon')
-      }
+//       } else {
+//         icon.classList.replace('fa-sun', 'fa-moon')
+//       }
+// }
+
+
+
+const toggle = document.querySelector('#dark-mode');
+const icon = document.querySelector('#icon');
+const body = document.querySelector('body');
+const loading = document.querySelector('#loading')
+
+function setMode() {
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode');
+    icon.classList.replace('fa-moon', 'fa-sun');
+    loading.setAttribute("src", "assets/pics/loading-dark.gif")
+
+  } else {
+    body.classList.remove('dark-mode');
+    icon.classList.replace('fa-sun', 'fa-moon');
+  }
 }
+
+toggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  if (icon.classList.contains('fa-moon')) {
+    icon.classList.replace('fa-moon', 'fa-sun');
+    loading.setAttribute("src", "assets/pics/loading-dark.gif")
+
+  } else {
+    icon.classList.replace('fa-sun', 'fa-moon');
+    loading.setAttribute("src", "assets/pics/loading.gif")
+  }
+});
+
+window.addEventListener('load', setMode);
+window.addEventListener('resize', setMode);
+window.addEventListener('online', setMode);
+window.addEventListener('offline', setMode);

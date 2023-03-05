@@ -669,7 +669,7 @@ loading
     height: 100%;
     width: 100%;
     z-index: 10000;
-    background: rgb(37, 37, 37);
+    background: rgb(30, 30, 30);
     display: flex;
     align-items: center;
     justify-content: center;
