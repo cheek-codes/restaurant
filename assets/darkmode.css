@@ -7,7 +7,7 @@
     --box-shadow:0 .5 rem 1.5rem rgba(0,0,0,.1);
 }
 
-*{
+.dark-mode *{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -17,39 +17,40 @@
     border: none;
     text-transform: capitalize;
     transition: all .2s linear;
+    background-color: rgb(37, 37, 37);
 }
 
-html{
+.dark-mode html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
 
-section{
+.dark-mode section{
     padding: 2rem 9%;
 }
 
-section:nth-child(even){
-    background: #eee;
+.dark-mode section:nth-child(even){
+    background: rgb(37, 37, 37);
 }
 
-.sub-heading{
+.dark-mode .sub-heading{
     text-align: center;
     color: var(--green);
     font-size: 2rem;
     padding-top: 1rem;
 }
 
-.heading{
+.dark-mode .heading{
     text-align: center;
-    color: var(--black);
+    color: var(--dark-mode-black);
     font-size: 3rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
 }
 
-.btn{
+.dark-mode .btn{
     margin-top: 1rem;
     display: inline-block;
     font-size: 1.7rem;
@@ -60,7 +61,7 @@ section:nth-child(even){
     padding: .8rem 3rem;
 }
 
-.btn:hover{
+.dark-mode .btn:hover{
     background: var(--green);
     letter-spacing: .1rem;
 }
@@ -72,12 +73,12 @@ section:nth-child(even){
  header
 *******************************************/
 
-header{
+.dark-mode header{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: rgb(37, 37, 37);
     padding: 1rem 7%;
     display: flex;
     align-items: center;
@@ -86,13 +87,13 @@ header{
     box-shadow: var(--box-shadow);
 }
 
-header .logo{
-    color: var(--black);
+.dark-mode header .logo{
+    color: var(--dark-mode-black);
     font-size: 2.5rem;
     font-weight: bolder;
 }
 
-header .logo i{
+.dark-mode header .logo i{
     color: var(--green);
 }
 
@@ -103,40 +104,40 @@ header .logo i{
 navigation bar
 *******************************************/
 
-header .navbar a{
+.dark-mode header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     color:var(--light-color);
 }
 
-header .navbar a.active,
-header .navbar a:hover{
+.dark-mode header .navbar a.active,
+.dark-mode header .navbar a:hover{
     color: #fff;
     background: var(--green);
 }
 
-header .icons i,
-header .icons a{
+.dark-mode header .icons i,
+.dark-mode header .icons a{
     margin-left: .5rem;
     height: 4.5rem;
     line-height: 4.5rem;
     width: 4.5rem;
     text-align: center;
     font-size: 1.7rem;
-    color: var(--black);
+    color: var(--dark-mode-black);
     border-radius: 50%;
-    background: #eee;
+    background: rgb(37, 37, 37);
 }
 
-header .icons i:hover,
-header .icons a:hover{
+.dark-mode header .icons i:hover,
+.dark-mode header .icons a:hover{
     color: #fff ;
     background: var(--green);
     transform: rotate(360deg);
 }
 
-header .icons #menu-bars{
+.dark-mode header .icons #menu-bars{
     display: none;
 }
 
@@ -147,7 +148,7 @@ header .icons #menu-bars{
  search
 *******************************************/
 
-#search-form{
+.dark-mode #search-form{
     position: fixed;
     top: -110%;
     left: 0;
@@ -161,11 +162,11 @@ header .icons #menu-bars{
     padding: 0 1rem;
 }
 
-#search-form.active{
+.dark-mode #search-form.active{
     top: 0;
 }
 
-#search-form #search-box{
+.dark-mode #search-form #search-box{
     width: 50rem;
     border-bottom: .1rem solid #fff;
     padding: 1rem 0;
@@ -175,25 +176,25 @@ header .icons #menu-bars{
     background: none;
 }
 
-#search-form #search-box::placeholder{
+.dark-mode #search-form #search-box::placeholder{
     color: #eee;
 }
 
-#search-form #search-box::-webkit-search-cancel-button{
+.dark-mode #search-form #search-box::-webkit-search-cancel-button{
     -webkit-appearance: none;
 }
 
-#search-form label{
+.dark-mode #search-form label{
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
 }
 
-#search-form label:hover{
+.dark-mode #search-form label:hover{
     color: var(--green);
 }
 
-#search-form #close{
+.dark-mode #search-form #close{
     position: absolute;
     color: #fff;
     cursor: pointer;
@@ -209,7 +210,7 @@ header .icons #menu-bars{
  home page
 *******************************************/
 
-.home .home-slider .slide{
+.dark-mode .home .home-slider .slide{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -217,36 +218,36 @@ header .icons #menu-bars{
     padding-top: 9rem;
 }
 
-.home .home-slider .slide .content{
+.dark-mode .home .home-slider .slide .content{
     flex: 1 1 45rem;
 }
 
-.home .home-slider .slide .image{
+.dark-mode .home .home-slider .slide .image{
     flex: 1 1 45rem;
 }
 
-.home .home-slider .slide .image img{
+.dark-mode .home .home-slider .slide .image img{
     width: 100%;
 }
 
-.home .home-slider .slide .content span{
+.dark-mode .home .home-slider .slide .content span{
     color: var(--green);
     font-size: 2.5rem;
 }
 
-.home .home-slider .slide .content h3{
-    color: var(--black);
+.dark-mode .home .home-slider .slide .content h3{
+    color: var(--dark-mode-black);
     font-size: 7rem;
 }
 
-.home .home-slider .slide .content p{
-    color: var(--light-color);
+.dark-mode .home .home-slider .slide .content p{
+    color: var(--dark-mode-light);
     font-size: 2.2rem;
     padding: .5rem 0;
     line-height: 1.5;
 }
 
-.swiper-pagination-bullet-active{
+.dark-mode .swiper-pagination-bullet-active{
     background: var(--green);
 }
 
@@ -257,79 +258,80 @@ header .icons #menu-bars{
  popular dishes
 *******************************************/
 
-.dishes .box-container{
+.dark-mode .dishes .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 1.5rem;
     padding: 0 2rem;
 }
 
-.dishes .box-container .box{
+.dark-mode .dishes .box-container .box{
     padding: 2.5rem;
-    background: #fff;
+    background: rgb(37, 37, 37);
     border-radius: 1rem;
     border: .1rem solid rgba(0, 0, 0, .2);
     box-shadow: var(--box-shadow);
     position: relative;
     overflow: hidden;
     text-align: center;
+    border: .5rem solid rgb(52, 52, 52);
 }
 
-.dishes .box-container .box .fa-heart,
-.dishes .box-container .box .fa-eye{
+.dark-mode .dishes .box-container .box .fa-heart,
+.dark-mode .dishes .box-container .box .fa-eye{
     position: absolute;
     top: 1.5rem;
-    background: #eee;
+    background: rgb(52, 52, 52);
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    color: var(--black);
+    color: var(--dark-mode-black);
 }
 
-.dishes .box-container .box .fa-heart:hover,
-.dishes .box-container .box .fa-eye:hover{
+.dark-mode .dishes .box-container .box .fa-heart:hover,
+.dark-mode .dishes .box-container .box .fa-eye:hover{
     background: var(--green);
     color: #fff;
 }
 
-.dishes .box-container .box .fa-heart{
+.dark-mode .dishes .box-container .box .fa-heart{
     right: -15rem;
 }
 
-.dishes .box-container .box .fa-eye{
+.dark-mode .dishes .box-container .box .fa-eye{
     left: -15rem;
 }
 
-.dishes .box-container .box:hover .fa-heart{
+.dark-mode .dishes .box-container .box:hover .fa-heart{
     right: 1.5rem;
 }
 
-.dishes .box-container .box:hover .fa-eye{
+.dark-mode .dishes .box-container .box:hover .fa-eye{
     left: 1.5rem;
 }
 
-.dishes .box-container .box img{
+.dark-mode .dishes .box-container .box img{
     height: 17rem;
     margin: 1rem 0;
 }
 
-.dishes .box-container .box h3{
-    color: var(--black);
+.dark-mode .dishes .box-container .box h3{
+    color: var(--dark-mode-black);
     font-size: 2.5rem;
 }
 
-.dishes .box-container .box .stars{
+.dark-mode .dishes .box-container .box .stars{
     padding: 1rem 0;
 }
 
-.dishes .box-container .box .stars i{
+.dark-mode .dishes .box-container .box .stars i{
     font-size: 1.7rem;
     color: var(--green);
 }
 
-.dishes .box-container .box span{
+.dark-mode .dishes .box-container .box span{
     color: var(--green);
     font-weight: bolder;
     margin-right: 1rem;
@@ -343,39 +345,39 @@ header .icons #menu-bars{
  about us
 *******************************************/
 
-.about .row{
+.dark-mode .about .row{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
 }
 
-.about .row .image{
+.dark-mode .about .row .image{
     flex: 1 1 45rem;
 }
 
-.about .row .image img{
+.dark-mode .about .row .image img{
     width: 100%;
 }
 
-.about .row .content{
+.dark-mode .about .row .content{
     flex: 1 1 45rem;
 }
 
-.about .row .content h3{
-    color: var(--black);
+.dark-mode .about .row .content h3{
+    color: var(--dark-mode-black);
     font-size: 4rem;
     padding: .5rem 0;
 }
 
-.about .row .content p{
-    color: var(--light-color);
+.dark-mode .about .row .content p{
+    color: var(--dark-mode-light);
     font-size: 1.5rem;
     padding: .5rem 0;
     line-height: 2;
 }
 
-.about .row .content .icons-container{
+.dark-mode .about .row .content .icons-container{
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -383,8 +385,8 @@ header .icons #menu-bars{
     margin-top: .5rem;
 }
 
-.about .row .content .icons-container .icons{
-    background: #eee;
+.dark-mode .about .row .content .icons-container .icons{
+    background: rgb(37, 37, 37);
     border-radius: .5rem;
     border: .1rem solid rgba(0, 0, 0, .2);
     display: flex;
@@ -395,14 +397,14 @@ header .icons #menu-bars{
     padding: 1.5rem 1rem;
 }
 
-.about .row .content .icons-container .icons i{
+.dark-mode .about .row .content .icons-container .icons i{
     font-size: 2.5rem;
     color: var(--green);
 }
 
-.about .row .content .icons-container .icons span{
+.dark-mode .about .row .content .icons-container .icons span{
     font-size: 1.5rem;
-    color: var(--black);
+    color: var(--dark-mode-black);
 }
 
 
@@ -411,20 +413,21 @@ header .icons #menu-bars{
 /******************************************
 menu
 *******************************************/
-.menu .box-container{
+.dark-mode .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.menu .box-container .box{
-    background: #fff;
+.dark-mode .menu .box-container .box{
+    background: rgb(37, 37, 37);
     border: .1rem solid rgba(0, 0, 0, .2);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
+    border: .5rem solid rgb(52, 52, 52)
 }
 
-.menu .box-container .box .image{
+.dark-mode .menu .box-container .box .image{
     height: 25rem;
     width: 100%;
     padding: 1.5rem;
@@ -432,13 +435,13 @@ menu
     position: relative;
 }
 
-.menu .box-container .box .image img{
+.dark-mode .menu .box-container .box .image img{
     height: 100%;
     width: 100%;
     border-radius: .5rem;
 }
 
-.menu .box-container .box .image .fa-heart{
+.dark-mode .menu .box-container .box .image .fa-heart{
     position: absolute;
     top: 2.5rem;
     right: 2.5rem;
@@ -447,43 +450,43 @@ menu
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    background: #fff;
+    background: rgb(52, 52, 52);
     border-radius: 50%;
-    color: var(--black);
+    color: var(--dark-mode-black);
 }
 
-.menu .box-container .box .image .fa-heart:hover{
+.dark-mode .menu .box-container .box .image .fa-heart:hover{
     background-color: var(--green);
     color: #fff;
 }
 
-.menu .box-container .box .content{
+.dark-mode .menu .box-container .box .content{
     padding: 2rem;
     padding-top: 0;
 }
 
-.menu .box-container .box .content .stars{
+.dark-mode .menu .box-container .box .content .stars{
     padding-bottom: 1rem;
 }
 
-.menu .box-container .box .content .stars i{
+.dark-mode .menu .box-container .box .content .stars i{
     font-style: 1.7rem;
     color: var(--green);
 }
 
-.menu .box-container .box .content h3{
-    color: var(--black);
+.dark-mode .menu .box-container .box .content h3{
+    color: var(--dark-mode-black);
     font-size: 2.5rem;
 }
 
-.menu .box-container .box .content p{
-    color: var(--light-color);
+.dark-mode .menu .box-container .box .content p{
+    color: var(--dark-mode-light);
     font-size: 1.6rem;
     padding: .5rem 0;
     line-height: 1.5;
 }
 
-.menu .box-container .box .content .price{
+.dark-mode .menu .box-container .box .content .price{
     color: var(--green);
     margin-left: 1rem;
     font-size: 2.5rem;
@@ -496,15 +499,16 @@ menu
 reviews
 *******************************************/
 
-.review .slide{
+.dark-mode .review .slide{
     padding: 2rem;
     box-shadow: var(--box-shadow);
     border: .1rem solid rgba(0, 0, 0, .2);
     border-radius: .5rem;
     position: relative;
+    border: .5rem solid rgb(52, 52, 52)
 }
 
-.review .slide .fa-quote-right{
+.dark-mode .review .slide .fa-quote-right{
     position: absolute;
     top: 2rem;
     right: 2rem;
@@ -512,35 +516,35 @@ reviews
     color: #ccc;
 }
 
-.review .slide .user{
+.dark-mode .review .slide .user{
     display: flex;
     gap: 1.5rem;
     align-items: center;
     padding-bottom: 1.5rem;
 }
 
-.review .slide .user img{
+.dark-mode .review .slide .user img{
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.review .slide .user h3{
-    color: var(--black);
+.dark-mode .review .slide .user h3{
+    color: var(--dark-mode-black);
     font-size: 2rem;
     padding-bottom: .5rem;
 }
 
-.review .slide .user i{
+.dark-mode .review .slide .user i{
     font-size: 1.3rem;
     color: var(--green);
 }
 
-.review .slide p{
+.dark-mode .review .slide p{
     font-size: 1.5rem;
     line-height: 1.8;
-    color: var(--light-color);
+    color: var(--dark-mode-light);
 }
 
 
@@ -550,56 +554,59 @@ reviews
 orders
 *******************************************/
 
-.order form{
+.dark-mode .order form{
     max-width: 90rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     border: .1rem solid rgba(0, 0, 0, .2);
-    background: #fff;
+    background: rgb(52, 52, 52);
     padding: 1.5rem;
     margin: 0 auto;
 }
 
-.order form .inputBox{
+.dark-mode .order form .inputBox{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: rgb(52, 52, 52);
+
 }
 
-.order form .inputBox .input{
+.dark-mode .order form .inputBox .input{
     width: 49%;
 }
 
-.order form .inputBox .input span{
+.dark-mode .order form .inputBox .input span{
     display: block;
     padding: .5rem 0;
     font-size: 1.5rem;
-    color: var(--light-color);
+    color: var(--dark-mode-light);
+    background: rgb(52, 52, 52);
 }
 
-.order form .inputBox .input input,
-.order form .inputBox .input textarea{
-    background: #eee;
+.dark-mode .order form .inputBox .input input,
+.dark-mode .order form .inputBox .input textarea{
+    background: rgb(37, 37, 37);
     border-radius: .5rem;
     padding: 1rem;
     font-size: 1.6rem;
-    color: var(--black);
+    color: var(--dark-mode-black);
     text-transform: none;
     margin-bottom: 1rem;
     width: 100%;
 }
 
-.order form .inputBox .input input:focus,
-.order form .inputBox .input textarea:focus{
+.dark-mode .order form .inputBox .input input:focus,
+.dark-mode .order form .inputBox .input textarea:focus{
     border: .1rem solid var(--green);
 }
 
-.order form .inputBox .input textarea{
+.dark-mode .order form .inputBox .input textarea{
     height: 20rem;
     resize: none;
 }
 
-.order form .btn{
+.dark-mode .order form .btn{
     margin-top: 0;
 }
 
@@ -610,41 +617,41 @@ orders
 footer
 *******************************************/
 
-.footer .box-container{
+.dark-mode .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
 }
 
-.footer .box-container .box h3{
+.dark-mode .footer .box-container .box h3{
     padding: .5rem 0;
     font-size: 2.5rem;
-    color: var(--black);
+    color: var(--dark-mode-black);
 }
 
-.footer .box-container .box a{
+.dark-mode .footer .box-container .box a{
     display: block;
     padding: .5rem 0;
     font-size: 1.5rem;
-    color: var(--light-color);
+    color: var(--dark-mode-light);
 }
 
-.footer .box-container .box a:hover{
+.dark-mode .footer .box-container .box a:hover{
     color: var(--green);
     text-decoration: underline;
 }
 
-.footer .credit{
+.dark-mode .footer .credit{
     text-align: center;
     border-top: .1rem solid rgba(0, 0, 0, .1);
     font-size: 2rem;
-    color: var(--black);
+    color: var(--dark-mode-black);
     padding: .5rem;
     padding-top: 1.5rem;
     margin-top: 1.5rem;
 }
 
-.footer .credit a{
+.dark-mode .footer .credit a{
     color: var(--green);
 }
 
@@ -655,25 +662,25 @@ footer
 loading
 *******************************************/
 
-.loader-container{
+.dark-mode .loader-container{
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 10000;
-    background: #fff;
+    background: rgb(37, 37, 37);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
-.loader-container img{
+.dark-mode .loader-container img{
     width: 35%;
 }
 
-.loader-container.fade-out{
+.dark-mode .loader-container.fade-out{
     top: 120%;
     opacity: 0;
 }
@@ -712,212 +719,47 @@ media queries
         top: 100%;
         left: 0;
         right: 0;
-        background:  #fff;
-        border-top: .1rem solid rgba(0,0,0,.2);
-        /* border-bottom: .1rem solid rgba(0,0,0,.2); */
-        padding: 1rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar a{
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background: #eee;
-    }
-
-    #search-form #search-box{
-        width: 90%;
-        margin: 0 1rem;
-    }
-
-    .home .home-slider .slide .content h3{
-        font-size: 5rem;
-    }
-}
-
-
-@media (max-width:450px) {
-    html{
-        font-size: 50%;
-    }
-
-    .dishes .box-container .box img{
-        height: auto;
-        width: 100%;
-    }
-
-    .order form .inputBox .input{
-        width: 100%;
-    }
-}
-
-
-
-
-/******************************************
-dark mode
-*******************************************/
-
-
-
-
-
-
-/******************************************
-media queries
-*******************************************/
-
-@media (max-width: 991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    header{
-        padding: 1rem 2rem;
-    }
-
-    section{
-        padding: 2rem;
-    }
-}
-
-
-@media(max-width: 768px){
-
-    header .icons #menu-bars{
-        display: inline-block;
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background:  #fff;
-        border-top: .1rem solid rgba(0,0,0,.2);
-        /* border-bottom: .1rem solid rgba(0,0,0,.2); */
-        padding: 1rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar a{
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background: #eee;
-    }
-
-    #search-form #search-box{
-        width: 90%;
-        margin: 0 1rem;
-    }
-
-    .home .home-slider .slide .content h3{
-        font-size: 5rem;
-    }
-}
-
-
-@media (max-width:450px) {
-    html{
-        font-size: 50%;
-    }
-
-    .dishes .box-container .box img{
-        height: auto;
-        width: 100%;
-    }
-
-    .order form .inputBox .input{
-        width: 100%;
-    }
-}
-
-
-
-/* 
-
-
-
-.dark-mode header .navbar a {
-    font-size: 1.7rem;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.5rem;
-    color: var(--dark-mode-light);
-}
-
-.dark-mode .home .home-slider .slide .content h3 {
-    color: var(--dark-mode-black);
-    font-size: 7rem;
-}
-
-.dark-mode .home .home-slider .slide .content p {
-    color: var(--dark-mode-light);
-    font-size: 2.2rem;
-    padding: 0.5rem 0;
-    line-height: 1.5;
-}
-
-.dark-mode header .icons i,
-.dark-mode header .icons a{
-    background: rgb(59, 59, 59);
-    color: white;
-}
-
-.dark-mode .btn {
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    color: #fff;
-    background: #415ea8;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    padding: 0.8rem 3rem;
-}
-
-.dark-mode .btn:hover {
-    background: var(--green);
-    letter-spacing: .1rem;
-}
-
- @media (max-width: 768px){
-    .dark-mode header .navbar a {
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background: rgb(47, 47, 47);
-    }
-
-    .dark-mode .home .home-slider .slide .content h3 {
-        font-size: 5rem;
-    }
-
-    .dark-mode header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
         background: rgb(37, 37, 37);
-        border-top: 0.1rem solid rgba(0,0,0,.2);
-        border-bottom: 0.1rem solid rgba(0,0,0,.2);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        /* border-bottom: .1rem solid rgba(0,0,0,.2); */
         padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    .dark-mode header .navbar a.active, header .navbar a:hover {
-        color: #fff;
-        background: var(--green);
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-} */
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: rgb(37, 37, 37);
+    }
+
+    #search-form #search-box{
+        width: 90%;
+        margin: 0 1rem;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+}
+
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+
+    .dishes .box-container .box img{
+        height: auto;
+        width: 100%;
+    }
+
+    .order form .inputBox .input{
+        width: 100%;
+    }
+}
